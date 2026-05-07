@@ -49,7 +49,7 @@ function Home() {
     <div>
       <Navbar />
       <div className="container">
-        <StoryList stories={stories} bookmarks={bookmarks} setBookmarks={setBookmarks} />
+        <StoryList stories={stories} bookmarks={bookmarks} setBookmarks={setBookmarks} currentPage={currentPage} />
         {token && totalPages > 1 && (
           <div style={{ marginTop: '20px', textAlign: 'center' }}>
             <button 

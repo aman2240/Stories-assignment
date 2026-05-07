@@ -3,7 +3,7 @@ import axios from 'axios';
 import { AuthContext } from '../context/AuthContext';
 import { API_URL } from '../config';
 
-function StoryList({ stories, bookmarks, setBookmarks }) {
+function StoryList({ stories, bookmarks, setBookmarks, currentPage = 1 }) {
   const { token, user } = useContext(AuthContext);
 
   const toggleBookmark = async (storyId) => {
@@ -34,7 +34,7 @@ function StoryList({ stories, bookmarks, setBookmarks }) {
         <div key={story._id} className="story-item">
           <div className="story-content">
             <div>
-              <span style={{ color: '#828282', marginRight: '10px' }}>{index + 1}.</span>
+              <span style={{ color: '#828282', marginRight: '10px' }}>{(currentPage - 1) * 10 + index + 1}.</span>
               <a href={story.url} target="_blank" rel="noopener noreferrer" className="story-title">
                 {story.title}
               </a>
