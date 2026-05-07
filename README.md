@@ -1,4 +1,4 @@
-# HackerNews Scraper - MERN Stack Application
+## Stories - MERN Stack Application
 
 A full-stack web application that scrapes top stories from HackerNews and allows users to bookmark their favorites.
 
@@ -36,26 +36,32 @@ hackernews-app/
 │   │   ├── scraperRoutes.js
 │   │   └── storyRoutes.js
 │   ├── .env
+│   ├── .gitignore
 │   ├── package.json
 │   └── server.js
-└── frontend/
-    ├── public/
-    │   └── index.html
-    ├── src/
-    │   ├── components/
-    │   │   ├── Navbar.js
-    │   │   └── StoryList.js
-    │   ├── context/
-    │   │   └── AuthContext.js
-    │   ├── pages/
-    │   │   ├── Bookmarks.js
-    │   │   ├── Home.js
-    │   │   ├── Login.js
-    │   │   └── Register.js
-    │   ├── App.js
-    │   ├── index.css
-    │   └── index.js
-    └── package.json
+├── frontend/
+│   ├── public/
+│   │   └── index.html
+│   ├── src/
+│   │   ├── components/
+│   │   │   ├── Navbar.js
+│   │   │   └── StoryList.js
+│   │   ├── context/
+│   │   │   └── AuthContext.js
+│   │   ├── pages/
+│   │   │   ├── Bookmarks.js
+│   │   │   ├── Home.js
+│   │   │   ├── Login.js
+│   │   │   └── Register.js
+│   │   ├── App.js
+│   │   ├── config.js
+│   │   ├── index.css
+│   │   └── index.js
+│   ├── .env
+│   ├── .gitignore
+│   └── package.json
+├── .gitignore
+└── README.md
 ```
 
 ## Setup Instructions
@@ -143,23 +149,28 @@ The app will open at `http://localhost:3000`
 ### Backend (.env)
 ```
 PORT=5000
-MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/dbname
-JWT_SECRET=your_random_secret_key
+MONGODB_URI=mongodb+srv://aman7667132240_db_user:mMixD9OJKjVMrNCH@workout-buddy.pjuv1fm.mongodb.net/?appName=workout-buddy
+JWT_SECRET=8741747fbc6ad549c2a17f3111c1452bb99fef228e473c8827cc850349882d86161e04aaaf3fe186364a34005d52f260f6dffdedac64c98d8309d0c9d56db943
+```
+### frontend (.env)
+```
+REACT_APP_API_URL=http://localhost:5000
+
 ```
 
 ## Features Implemented
 
-- ✅ Web scraper for HackerNews
-- ✅ Automatic scraping on server start
-- ✅ Manual scraping via API
-- ✅ JWT authentication
-- ✅ User registration and login
-- ✅ Story listing sorted by points
-- ✅ Bookmark functionality
-- ✅ Protected routes
-- ✅ React Context for state management
-- ✅ Pagination support
-- ✅ Clean folder structure
+-  Web scraper for HackerNews
+-  Automatic scraping on server start
+-  Manual scraping via API
+-  JWT authentication
+-  User registration and login
+-  Story listing sorted by points
+-  Bookmark functionality
+-  Protected routes
+-  React Context for state management
+-  Pagination support
+-  Clean folder structure
 
 ## Notes
 
